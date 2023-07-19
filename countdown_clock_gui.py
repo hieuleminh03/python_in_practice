@@ -20,6 +20,7 @@ window = sg.Window("Countdown Clock", layout,
 
 def start():
     time = int(values['textbox'])
+    
     while time > 0:
         
         hour = time // 3600
