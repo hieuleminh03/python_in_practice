@@ -1,41 +1,42 @@
 from random import randint
-
-print("chọn kéo, búa, bao: ")
-
-player = input()
 computer = randint(0,2)
+if __name__ == "__main__":
+    print("chọn kéo, búa, bao: ")
 
-if computer == 0:
-    computer = "kéo"
-if computer == 1:
-    computer = "bao"
-if computer == 2:
-    computer = "búa"
+    player = input()
+    
 
-print("---") 
-print("người chơi chọn: " + player )
-print("máy chọn: " + computer)
-print("---")
+    if computer == 0:
+        computer = "kéo"
+    if computer == 1:
+        computer = "bao"
+    if computer == 2:
+        computer = "búa"
 
-if player == computer:
-    print("hòa")
-else:
-    if player == "kéo":
-        if computer == "bao":
-            print("thắng")
-        else:
-            print("thua")
+    print("---") 
+    print("người chơi chọn: " + player )
+    print("máy chọn: " + computer)
+    print("---")
 
-    elif player == "búa":
-        if computer == "bao":
-            print("thua")
-        else:
-            print("thắng")
-            
-    elif player == "bao":
-        if computer == "búa":
-            print("thắng")
-        else:
-            print("thua")
+    if player == computer:
+        print("hòa")
     else:
-        print("chọn không đúng yêu cầu chọn lại!!!")
+        if player == "kéo":
+            if computer == "bao":
+                print("thắng")
+            else:
+                print("thua")
+
+        elif player == "búa":
+            if computer == "bao":
+                print("thua")
+            else:
+                print("thắng")
+                
+        elif player == "bao":
+            if computer == "búa":
+                print("thắng")
+            else:
+                print("thua")
+        else:
+            print("chọn không đúng yêu cầu chọn lại!!!")
