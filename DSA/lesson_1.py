@@ -26,7 +26,9 @@ def print_even(a): # in ra cac so le
     pass
 
 def print_larger_x(a, x): # in ra cac so lon hon x
-    pass 
+    for b in a:
+        if b > x:
+            print(b)
         
 if __name__ == "__main__":
-    tich(a)
+    print_larger_x(a,3)
