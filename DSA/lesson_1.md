@@ -19,6 +19,10 @@ list.append(element)
 ```
 - Truy cập phần tử:
 ```python
-list.get(index)
 list[index]
+```
+- Duyệt tất cả phần tử:
+```python
+for x in list:
+    # lam gi do
 ```
