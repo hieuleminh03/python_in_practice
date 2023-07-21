@@ -20,10 +20,16 @@ def tich(a): # tinh tich
     print("Tich la: " + str(s))
     
 def print_odd(a): # in ra cac so chan
-    pass
+    for x in a:
+        if x%2 == 0:
+            print(x)
+        
+           
 
 def print_even(a): # in ra cac so le
-    pass
+    for x in a:
+        if x%2 == 1:
+            print(x)
 
 def print_larger_x(a, x): # in ra cac so lon hon x
     for b in a:
@@ -32,3 +38,10 @@ def print_larger_x(a, x): # in ra cac so lon hon x
         
 if __name__ == "__main__":
     print_larger_x(a,3)
+def print_larger_1(a): # in ra cac so lon hon x
+    for x in a:
+        if x > 1:
+            print(x)
+        
+if __name__ == "__main__":
+    print_larger_1(a)
