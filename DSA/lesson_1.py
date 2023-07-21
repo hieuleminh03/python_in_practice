@@ -1,4 +1,4 @@
-a = [1,2,3,4,5,5,6]
+a = [1,2,3,6,10,5,6]
 
 def check_odd(a): # in ra tinh chan le cua tung so ?
     for x in a:
@@ -40,27 +40,40 @@ def test(a):
     a.insert(3,50) # o index them gia tri
     
 def swap(a, x, y): # doi cho gia tri 2 index x va y
-#e chịu nha bro  
-    pass
+    temp = x
+    a[x] = a[y]
+    a[y] = a[x]
 
 def find_max(a): # tim gia tri lon nhat
-    print(max(a))
+    max = a[0]
+    for x in a:
+        if x > max:
+            max = x # cap nhat lai gia tri cua max
+    print(max)
 
 def find_min(a): # tim gia tri nho nhat
-    print(min(a))
+    pass
 
-def check_element(a): # kiem tra xem x co o trong list khong
-# cái này e cx chịu nốt nha bro
+def check_element(a, x): # kiem tra xem x co o trong list khong
     for b in a:
-        if x := b:
-            print("x có ở trong list")
-        else:
-            print("x không ở trong list")
+        if b == x:
+            print("Yes")
+            return
+    print("No")
 
 def del_list(a): # xoa toan bo list
-    a.clear()
-    print(a)
+    del a
+    
+def count_odd(a): # dem so phan tu chan trong danh sach
+    count = 0
+    for x in a:
+        if x%2:
+            pass
+        else:
+            count += 1
+            
+    print("So phan tu chan: " + str(count))
       
 if __name__ == "__main__":
-   del_list(a)
+   count_odd(a)
         
