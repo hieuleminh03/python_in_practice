@@ -40,20 +40,27 @@ def test(a):
     a.insert(3,50) # o index them gia tri
     
 def swap(a, x, y): # doi cho gia tri 2 index x va y
+#e chịu nha bro  
     pass
 
 def find_max(a): # tim gia tri lon nhat
-    pass
+    print(max(a))
 
 def find_min(a): # tim gia tri nho nhat
-    pass
+    print(min(a))
 
 def check_element(a): # kiem tra xem x co o trong list khong
-    pass
+# cái này e cx chịu nốt nha bro
+    for b in a:
+        if x := b:
+            print("x có ở trong list")
+        else:
+            print("x không ở trong list")
 
 def del_list(a): # xoa toan bo list
-    pass
+    a.clear()
+    print(a)
       
 if __name__ == "__main__":
-   test(a)
+   del_list(a)
         
