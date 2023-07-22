@@ -1,23 +1,41 @@
 # String
 
+a = "Lesson"
+
 def concat(): # Nhập vào 2 chuỗi, ghép lại rồi in ra
     # VD: nor mal  ->  normal
-    pass
+    a = "nor"
+    b = "mal"
+    S = a+b
+    print(S)
 
-def separate(): # Nhập vào 1 chuỗi, in ra từng chữ cái của nó
+def separate(a): # Nhập vào 1 chuỗi, in ra từng chữ cái của nó
     # VD: okb  ->
     # o
     # k
     # b
-    pass
+    
+    print(a[0])
+    print(a[1])
+    print(a[2])
+    print(a[3])
+    print(a[4])
+    print(a[5])
 
-def count_char(): # Nhập vào 1 chuỗi, in ra số chữ cái nó có
+def count_char(a): # Nhập vào 1 chuỗi, in ra số chữ cái nó có
     # VD: example -> 7
-    pass
+    count = 0
+    for x in a:
+        if x is int:
+            pass
+        else:
+            count += 1
 
-def capitalize(): # Nhập vào 1 chuỗi, in ra nó nhưng tất cả viết hoa
+    print("số chữ cái của chuỗi: " + str(count))
+            
+def capitalize(a): # Nhập vào 1 chuỗi, in ra nó nhưng tất cả viết hoa
     # VD: vrSCbg -> VRSCBG
-    pass
+    print(a.upper())
 
 if __name__ == "__main__":
-    pass
+    concat()
